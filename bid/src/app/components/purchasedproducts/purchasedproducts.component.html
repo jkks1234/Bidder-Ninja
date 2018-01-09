@@ -1,0 +1,18 @@
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Purchased Price</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let products of product; let i = index" [attr.data-index]="i">
+      <td>{{i+1}}</td>
+      <td>{{products.name}}</td>
+      <td>{{products.currentprice}}</td>
+    </tr>
+    
+  </tbody>
+</table> 

@@ -1,0 +1,28 @@
+<form id=
+"filter"> 
+ <label>Filter Items By Name :</label>   
+ <input type="text"  [(ngModel)]="term" [ngModelOptions]="{standalone: true}"/>
+  </form>
+  <br><br>
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>name</th>
+      <th>price</th>
+      <th>Date</th>
+      <th>Bid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let products of product | filter:term; let i = index" [attr.data-index]="i">
+      <td>{{i+1}}</td>
+      <td>{{products.name}}</td>
+      <td>{{products.price}}</td>
+      <td>{{products.date | date: 'short'}}</td>
+      
+      <td><a [routerLink]="['/listone',products._id]">Bid Now</a></td>
+    </tr>
+    
+  </tbody>
+</table> 

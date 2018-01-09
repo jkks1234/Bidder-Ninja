@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">BIDDER NINJA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+              <li style="padding-right:10px;" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a  [routerLink]="['/showitems']">Home  </a></li>
+              <li> </li>
+        <li style="padding-right:10px;" class="nav-item" *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a  [routerLink]="['/postitem']">  Add Product </a></li>
+        <li style="padding-right:10px;" class="nav-item" *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a  [routerLink]="['/myproducts']">  My Products </a></li>
+        <li style="padding-right:10px;" class="nav-item" *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a  [routerLink]="['/soldproducts']">  Sold Product </a></li>
+        <li style="padding-right:10px;" class="nav-item" *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a  [routerLink]="['/purchasedproducts']"> Product Purchased </a></li>
+
+
+    </ul>
+        
+      <ul class="nav navbar-nav navbar-right">
+        
+         <li style="padding-right:10px;" class="nav-item" *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a  [routerLink]="['/signup']">Sign Up </a></li>
+         <li> </li>
+          <li style="padding-right:10px;" class="nav-item" *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a  [routerLink]="['/login']"> Login</a></li>
+          <li *ngIf="authService.loggedIn()" ><a  href="" (click)="onLogoutClick()"> Logout</a></li>
+      </ul>
+  </div>
+</nav>
+<br>
+<br>

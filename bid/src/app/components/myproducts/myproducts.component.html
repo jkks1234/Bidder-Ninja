@@ -1,0 +1,23 @@
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>Sno.</th>
+      <th>Name</th>
+      <th>Highest Bid</th>
+      <th>Close Bid</th>
+      
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let myproducts of myproduct; let i = index" [attr.data-index]="i">
+      <td>{{i+1}}</td>
+      <td>{{myproducts.name}}</td>
+      <td>{{myproducts.currentprice}}</td>
+      <td><button type="submit"  class="btn btn-danger"(click)="clicked1(myproducts._id);">Close Bid</button></td>
+    
+      <td><button type="submit"  class="btn btn-danger"(click)="clicked(myproducts._id);">Delete</button></td>
+    </tr>
+    
+  </tbody>
+</table> 
