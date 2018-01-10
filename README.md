@@ -10,9 +10,12 @@ Price updation using Socket.io,Close bid,Delete item,Search items,Purchased prod
 
 ## Start Angular Server
 -npm install
--ng serve --port (port_number)
+-ng serve or ng serve --port (port_number)
 
 ## Screenshots
 <img src="https://user-images.githubusercontent.com/27223544/34772451-f5d6de60-f62d-11e7-8c44-22f13ad2e80f.png" width=400><img src="https://user-images.githubusercontent.com/27223544/34772563-6f3bd152-f62e-11e7-8e6b-c705d23ed3be.png" width =400>
 <br>
 <img src="https://user-images.githubusercontent.com/27223544/34772625-a3b82d86-f62e-11e7-87a2-9b47db9411ed.png" width=400><img src="https://user-images.githubusercontent.com/27223544/34772640-b0bf1cb0-f62e-11e7-9d65-8b42844bf5e2.png" width=400>
+<br>
+<img src="https://user-images.githubusercontent.com/27223544/34772901-bbdfbe00-f62f-11e7-9aa6-fb7f6ee1751f.png" width= 400><img src="https://user-images.githubusercontent.com/27223544/34772917-cbae0738-f62f-11e7-8f3d-18aeb0125b09.png" width=400>
+<br>
