@@ -4,11 +4,11 @@ A Mean Stack App for bidding using Socket.io.It allow user to post item for bidd
 ## Key Features
 Price updation using Socket.io,Close bid,Delete item,Search items,Purchased products,Sold products,Products available for bidding,Authentication using Passport-jwt,Mongodb Storage
 
-##Start Nodejs Server
+## Start Nodejs Server
 -npm install 
 -node app.js
 
-##Start Angular Server
+## Start Angular Server
 -npm install
 -ng serve --port (port_number)
 
